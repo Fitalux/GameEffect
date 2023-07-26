@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Project</title>
+</head>
+<body>
+    <div class="cursor">
+        <img src="images/game_mouse01.png" alt>
+    </div>
+
+    <header id="header">
+        <h1>GAME WORLD</h1>
+        <div class="time">2023년 4월 24일 09시 30분 15초</div>
+    </header>
+
+    <main>
+        <div class="icon__box">
+            <div class="icon1">
+                <img src="images/game_icon01.png" alt="뮤직">
+                <span>뮤직 듣기</span>
+            </div>
+            <div class="icon2">
+                <img src="images/game_icon02.png" alt="뮤직">
+                <span>뮤직 듣기</span>
+            </div>
+            <div class="icon3">
+                <img src="images/game_icon03.png" alt="뮤직">
+                <span>뮤직 듣기</span>
+            </div>
+            <div class="icon4">
+                <img src="images/game_icon04.png" alt="뮤직">
+                <span>뮤직 듣기</span>
+            </div>
+        </div>
+
+        <!-- 뮤직 플레이어 -->
+        <div class="music__wrap">
+            <div class="music__inner">
+                <div class="music__header">
+                    <span class="left"></span>
+                    <h2>Music Player</h2>
+                    <span class="right"></span>
+                </div>
+                <div class="music__contents">
+                    <div class="music__view">
+                        <div class="image">
+                            <img src="images/music_view01.png" alt="음악">
+                        </div>
+                    </div>
+                    <div class="music__control">
+                        <div class="title">
+                            <h3>Green Green Grass</h3>
+                            <p>George Ezra</p>
+                        </div>
+                        <div class="progress">
+                            <div class="bar">
+                                <audio id="main-audio" src="audio/music_audio10.mp3"></audio>
+                            </div>
+                            <div class="timer">
+                                <span class="current">0:00</span>
+                                <span class="duration">3:55</span>
+                            </div>
+                        </div>
+                        <div class="control">
+                            <span>
+                                <i class="repeat" id="control-repeat" title="전체 반복"></i>
+                                <!-- <i class="repeat_one" id="control-repeat" title="한곡 반복"></i>
+                                <i class="shuffle" id="control-repeat" title="랜덤 반복"></i> -->
+                            </span>
+                            <span>
+                                <i class="prev" id="control-prev" title="이전곡 재생"></i>
+                            </span>
+                            <span>
+                                <i class="play" id="control-play" title="재생"></i>
+                            </span>
+                            <span>
+                                <i class="next" id="control-next" title="다음곡 재생"></i>
+                            </span>
+                            <span>
+                                <i class="list" id="control-list" title="재생 목록"></i>
+                            </span>
+                            <!-- <span class="stop">정지 반복</span> -->
+                        </div>
+                    </div>
+                    <div class="music__list">
+                        <h3>뮤직 리스트 <a href="#" class="close"></a></h3>
+                        <ul>
+                            <!-- <li>
+                                <span class="img">
+                                    <img class="img" src="images/music_view01.png" alt="">
+                                </span>
+                                <span class="title">
+                                    <strong>1. 저리가라</strong>
+                                    <em>DJ Freedom</em>
+                                </span>
+                                <span class="time">3:04</span>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // 뮤직 플레이어 -->
+
+        <!-- // 테트리스 -->
+        <div class="tetris__wrap">
+            <div class="tetris__start"></div>
+            <div class="tetris__text"></div>
+            <div class="tetris__score"></div>
+            <div class="tetris__play">
+                <div class="view">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- // 점수 -->
+        <div class="score__wrap">
+            <span class="score__display">0</span> <em>점</em>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="info">현재 윈도우를 사용하고 있으며, 화면 크기는 1920 X 760입니다.</div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script type="module" src="/main.js"></script>
+    
+</body>
+</html>
